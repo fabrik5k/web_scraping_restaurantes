@@ -11,7 +11,7 @@ with sync_playwright() as p:
     browser = p.chromium.launch(headless=True)  # headless=False para ver o navegador em ação
 
     # Adicionando Estado da máquina
-    context = browser.new_context(storage_state="./estados/storageState2.json")
+    context = browser.new_context(storage_state="./states/storageState2.json")
 
     # Acessar a página
     page = context.new_page()
@@ -52,7 +52,7 @@ with sync_playwright() as p:
 
     try:
         # Loop para pegar os dados
-        for i in range(19, page_search_number):
+        for i in range(2, page_search_number):
 
             if NUM_RESULTADOS == len(dados):
                 break
