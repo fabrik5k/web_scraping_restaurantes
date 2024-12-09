@@ -11,7 +11,7 @@ with sync_playwright() as p:
     browser = p.chromium.launch(headless=True)  # headless=False para ver o navegador em ação
 
     # Adicionando Estado da máquina
-    context = browser.new_context(storage_state="./states/storageState2.json")
+    context = browser.new_context(storage_state="./estados/storageState2.json")
 
     # Acessar a página
     page = context.new_page()
