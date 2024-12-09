@@ -11,7 +11,6 @@ Este projeto realiza **web scraping** no site **EconoData** para coletar dados p
 5. [Como Executar o Projeto](#como-executar-o-projeto)  
 6. [Resultados](#resultados)  
 7. [Contribuições](#contribuições)  
-8. [Licença](#licença)
 
 ---
 
@@ -119,13 +118,7 @@ Contribuições são bem-vindas! Se quiser contribuir:
 
 ---
 
-## 📝 **Licença**
-
-Este projeto está licenciado sob a licença **MIT**. Consulte o arquivo `LICENSE` para mais detalhes.
-
----
-
-**Autor**: [Seu Nome](https://github.com/seu-usuario)  
+**Autor**: [Fabio Oliveira](https://github.com/fabrik5k)  
 
 ---
 
