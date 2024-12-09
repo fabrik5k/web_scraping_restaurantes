@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0897c72edf07655da96cf64587b86cee {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0897c72edf07655da96cf64587b86cee" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0897c72edf07655da96cf64587b86cee = L.map(
+                "map_0897c72edf07655da96cf64587b86cee",
+                {
+                    center: [-1.455, -48.502],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5c033c80c7d11b1555b4ad86413b8c6a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_5c033c80c7d11b1555b4ad86413b8c6a.addTo(map_0897c72edf07655da96cf64587b86cee);
+        
+    
+            var marker_cluster_e294f49ca636526ae0578efcccb797ee = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_5433724a0ea925c0bb0908cf337ccc0a = L.marker(
+                [-1.3905464158067857, -48.47294572197383],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_09cf8146dea67e8f76f1133ae090049e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8d7f10f9790a634071cdf631b75b6727 = $(`<div id="html_8d7f10f9790a634071cdf631b75b6727" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> COCO BAMBU BELEM<br>     <b>Razão Social:</b> CB BELEM COMERCIO DE ALIMENTOS LTDA<br>     <b>CNPJ:</b> 46.472.087/0001-09<br>     <b>Situação:</b> ATIVA desde 20/05/2022<br>     <b>Endereço:</b> Rodovia dos Trabalhadores<br>     <b>Bairro:</b> Parque Verde<br>     </div>`)[0];
+                popup_09cf8146dea67e8f76f1133ae090049e.setContent(html_8d7f10f9790a634071cdf631b75b6727);
+            
+        
+
+        marker_5433724a0ea925c0bb0908cf337ccc0a.bindPopup(popup_09cf8146dea67e8f76f1133ae090049e)
+        ;
+
+        
+    
+    
+            marker_5433724a0ea925c0bb0908cf337ccc0a.bindTooltip(
+                `<div>
+                     COCO BAMBU BELEM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5a32787eaa11116a243affa187e3c4fc = L.marker(
+                [-1.44632925, -48.489719744011424],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_f2a811caeb19e3702dda1e2cef8cf324 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2dff2781ac0d93d38403008c694c2ee5 = $(`<div id="html_2dff2781ac0d93d38403008c694c2ee5" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> FAMIGLIA D'ITALIA<br>     <b>Razão Social:</b> FAMIGLIA DI ITALIA COMERCIO DE ALIMENTOS LTDA<br>     <b>CNPJ:</b> 30.746.245/0001-23<br>     <b>Situação:</b> ATIVA desde 20/06/2018<br>     <b>Endereço:</b> Avenida Visconde de Souza Franco, 776, Sala 446 447 4 448<br>     <b>Bairro:</b> Reduto<br>     </div>`)[0];
+                popup_f2a811caeb19e3702dda1e2cef8cf324.setContent(html_2dff2781ac0d93d38403008c694c2ee5);
+            
+        
+
+        marker_5a32787eaa11116a243affa187e3c4fc.bindPopup(popup_f2a811caeb19e3702dda1e2cef8cf324)
+        ;
+
+        
+    
+    
+            marker_5a32787eaa11116a243affa187e3c4fc.bindTooltip(
+                `<div>
+                     FAMIGLIA D'ITALIA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_401c827940b7cbad4e94f8ba48bcf116 = L.marker(
+                [-1.4362571013904253, -48.46535418025257],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_13e50987aaf11888332c2e075024a472 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9a24ca2b9b77a4262acaf080626f9d36 = $(`<div id="html_9a24ca2b9b77a4262acaf080626f9d36" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> EMPORIO GOURMET<br>     <b>Razão Social:</b> MWS EVENTOS E BUFFET LTDA<br>     <b>CNPJ:</b> 07.370.589/0001-69<br>     <b>Situação:</b> ATIVA<br>     <b>Endereço:</b> Travessa Timbo, 2212<br>     <b>Bairro:</b> Marco<br>     </div>`)[0];
+                popup_13e50987aaf11888332c2e075024a472.setContent(html_9a24ca2b9b77a4262acaf080626f9d36);
+            
+        
+
+        marker_401c827940b7cbad4e94f8ba48bcf116.bindPopup(popup_13e50987aaf11888332c2e075024a472)
+        ;
+
+        
+    
+    
+            marker_401c827940b7cbad4e94f8ba48bcf116.bindTooltip(
+                `<div>
+                     EMPORIO GOURMET
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7e15530a714eb3fa6c136a7ee204e095 = L.marker(
+                [-1.4563164, -48.4891835],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_e0ad4a37cb15152f9df5b6e2374e066b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_79650ef84c94d87c3970224b51ad8006 = $(`<div id="html_79650ef84c94d87c3970224b51ad8006" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> MANJAR BUFFET<br>     <b>Razão Social:</b> ACG BAR E RESTAURANTE LTDA<br>     <b>CNPJ:</b> 29.993.405/0001-50<br>     <b>Situação:</b> ATIVA desde 21/03/2018<br>     <b>Endereço:</b> Avenida Gentil Bittencourt, 344<br>     <b>Bairro:</b> Batista Campos<br>     </div>`)[0];
+                popup_e0ad4a37cb15152f9df5b6e2374e066b.setContent(html_79650ef84c94d87c3970224b51ad8006);
+            
+        
+
+        marker_7e15530a714eb3fa6c136a7ee204e095.bindPopup(popup_e0ad4a37cb15152f9df5b6e2374e066b)
+        ;
+
+        
+    
+    
+            marker_7e15530a714eb3fa6c136a7ee204e095.bindTooltip(
+                `<div>
+                     MANJAR BUFFET
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa3d47adfec53e7e3cc1a7094aa4bcf7 = L.marker(
+                [-1.4542848290697674, -48.48263446395349],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_d48ee970c2cfa3fa00b977eadfeff87e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a34d1fc9b7c7e4d48a6270dec53d9773 = $(`<div id="html_a34d1fc9b7c7e4d48a6270dec53d9773" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> Não Disponível<br>     <b>Razão Social:</b> W S R MARTINS SERVICOS DE ALIMENTOS LTDA<br>     <b>CNPJ:</b> 01.092.367/0001-45<br>     <b>Situação:</b> ATIVA desde 18/03/2022<br>     <b>Endereço:</b> Avenida Generalissimo Deodoro, 1513<br>     <b>Bairro:</b> Nazare<br>     </div>`)[0];
+                popup_d48ee970c2cfa3fa00b977eadfeff87e.setContent(html_a34d1fc9b7c7e4d48a6270dec53d9773);
+            
+        
+
+        marker_aa3d47adfec53e7e3cc1a7094aa4bcf7.bindPopup(popup_d48ee970c2cfa3fa00b977eadfeff87e)
+        ;
+
+        
+    
+    
+            marker_aa3d47adfec53e7e3cc1a7094aa4bcf7.bindTooltip(
+                `<div>
+                     Não Disponível
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_529ea466495508288450a114e4ad98ae = L.marker(
+                [-1.4374474112587547, -48.46895015688325],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_f97a659c9224653af18f140c82d96a04 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_868e9e31b1a75b53cac6d07e58ebb68a = $(`<div id="html_868e9e31b1a75b53cac6d07e58ebb68a" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> S  K CAFE<br>     <b>Razão Social:</b> S  K LANCHONETE LTDA<br>     <b>CNPJ:</b> 17.214.358/0001-10<br>     <b>Situação:</b> ATIVA desde 26/11/2012<br>     <b>Endereço:</b> Travessa Humaita, 1598, Andar 3<br>     <b>Bairro:</b> Pedreira<br>     </div>`)[0];
+                popup_f97a659c9224653af18f140c82d96a04.setContent(html_868e9e31b1a75b53cac6d07e58ebb68a);
+            
+        
+
+        marker_529ea466495508288450a114e4ad98ae.bindPopup(popup_f97a659c9224653af18f140c82d96a04)
+        ;
+
+        
+    
+    
+            marker_529ea466495508288450a114e4ad98ae.bindTooltip(
+                `<div>
+                     S  K CAFE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_76d12211c7c1991ab5d55d8f2c4b4965 = L.marker(
+                [-1.458131, -48.494854802692934],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_5f4baacd2002599620a962d8d618a000 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_80c79bd87f80a9b5e24c233ca5dccd3b = $(`<div id="html_80c79bd87f80a9b5e24c233ca5dccd3b" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> Não Disponível<br>     <b>Razão Social:</b> KCR COMERCIO DE ALIMENTOS LTDA<br>     <b>CNPJ:</b> 02.637.777/0001-97<br>     <b>Situação:</b> ATIVA desde 14/08/2004<br>     <b>Endereço:</b> Travessa Padre Eutiquio, 1078, Lojas 411/12/13 3 Piso Praca de Alimentacao<br>     <b>Bairro:</b> Batista Campos<br>     </div>`)[0];
+                popup_5f4baacd2002599620a962d8d618a000.setContent(html_80c79bd87f80a9b5e24c233ca5dccd3b);
+            
+        
+
+        marker_76d12211c7c1991ab5d55d8f2c4b4965.bindPopup(popup_5f4baacd2002599620a962d8d618a000)
+        ;
+
+        
+    
+    
+            marker_76d12211c7c1991ab5d55d8f2c4b4965.bindTooltip(
+                `<div>
+                     Não Disponível
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_63bb4ddd208a3e01cbe3cc06f97890d3 = L.marker(
+                [-1.3656050914186721, -48.44820701506224],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_b8dcf75fb486ce4757ad5592b0562f70 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0cad005e555b456472fd5c03b9cacbdf = $(`<div id="html_0cad005e555b456472fd5c03b9cacbdf" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> MCDONALD'S<br>     <b>Razão Social:</b> KRC COMERCIO DE ALIMENTOS LTDA<br>     <b>CNPJ:</b> 28.926.349/0001-78<br>     <b>Situação:</b> ATIVA desde 24/10/2017<br>     <b>Endereço:</b> Rodovia Augusto Montenegro, 4300, Loja 2011 e 2012 Nivel 2<br>     <b>Bairro:</b> Parque Verde<br>     </div>`)[0];
+                popup_b8dcf75fb486ce4757ad5592b0562f70.setContent(html_0cad005e555b456472fd5c03b9cacbdf);
+            
+        
+
+        marker_63bb4ddd208a3e01cbe3cc06f97890d3.bindPopup(popup_b8dcf75fb486ce4757ad5592b0562f70)
+        ;
+
+        
+    
+    
+            marker_63bb4ddd208a3e01cbe3cc06f97890d3.bindTooltip(
+                `<div>
+                     MCDONALD'S
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c447203f7a98927f927a284710770cac = L.marker(
+                [-1.4362571013904253, -48.46535418025257],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_f91016e7c93435908b1b59d084761687 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e0fcf7c83c023dd8eaff23f70c8fbfd1 = $(`<div id="html_e0fcf7c83c023dd8eaff23f70c8fbfd1" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> Não Disponível<br>     <b>Razão Social:</b> MWS EVENTOS E BUFFET EIRELLI SCP<br>     <b>CNPJ:</b> 38.826.444/0001-53<br>     <b>Situação:</b> ATIVA desde 04/11/2019<br>     <b>Endereço:</b> Travessa Timbo, 2212<br>     <b>Bairro:</b> Marco<br>     </div>`)[0];
+                popup_f91016e7c93435908b1b59d084761687.setContent(html_e0fcf7c83c023dd8eaff23f70c8fbfd1);
+            
+        
+
+        marker_c447203f7a98927f927a284710770cac.bindPopup(popup_f91016e7c93435908b1b59d084761687)
+        ;
+
+        
+    
+    
+            marker_c447203f7a98927f927a284710770cac.bindTooltip(
+                `<div>
+                     Não Disponível
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a84f78406b428e84ab68c3b216b85cb0 = L.marker(
+                [-1.436568, -48.4659974],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_4e908534b2bc737fe53a14bce1a686d5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_59cd3ddfaf0271e1ade3ecf35051325c = $(`<div id="html_59cd3ddfaf0271e1ade3ecf35051325c" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> PH COMPANY ALIMENTOS<br>     <b>Razão Social:</b> RBL COMERCIO DE ALIMENTOS LTDA<br>     <b>CNPJ:</b> 18.555.248/0001-84<br>     <b>Situação:</b> ATIVA desde 10/05/2022<br>     <b>Endereço:</b> Avenida Duque de Caxias, 708<br>     <b>Bairro:</b> Marco<br>     </div>`)[0];
+                popup_4e908534b2bc737fe53a14bce1a686d5.setContent(html_59cd3ddfaf0271e1ade3ecf35051325c);
+            
+        
+
+        marker_a84f78406b428e84ab68c3b216b85cb0.bindPopup(popup_4e908534b2bc737fe53a14bce1a686d5)
+        ;
+
+        
+    
+    
+            marker_a84f78406b428e84ab68c3b216b85cb0.bindTooltip(
+                `<div>
+                     PH COMPANY ALIMENTOS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b204063de477d57427f53b595a51b6df = L.marker(
+                [-1.3918980614816898, -48.417318168034654],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_b34f19e291c054154df43f935d3d0082 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0c39baee42686bc6ecbc13604813be0c = $(`<div id="html_0c39baee42686bc6ecbc13604813be0c" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> TIO ARMENIO GRILL<br>     <b>Razão Social:</b> EVORA COMERCIO DE ALIMENTOS LTDA<br>     <b>CNPJ:</b> 53.739.494/0001-97<br>     <b>Situação:</b> ATIVA desde 31/01/2024<br>     <b>Endereço:</b> Rodovia Br-316<br>     <b>Bairro:</b> Castanheira<br>     </div>`)[0];
+                popup_b34f19e291c054154df43f935d3d0082.setContent(html_0c39baee42686bc6ecbc13604813be0c);
+            
+        
+
+        marker_b204063de477d57427f53b595a51b6df.bindPopup(popup_b34f19e291c054154df43f935d3d0082)
+        ;
+
+        
+    
+    
+            marker_b204063de477d57427f53b595a51b6df.bindTooltip(
+                `<div>
+                     TIO ARMENIO GRILL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f0fea57d1fadf299f0fd0d14b060eb1d = L.marker(
+                [-1.448240333307018, -48.472426412052286],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_41295509b5093c10a153058592676bd9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ba4c936601637641f0cef912043c37cd = $(`<div id="html_ba4c936601637641f0cef912043c37cd" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> BOS S<br>     <b>Razão Social:</b> BOSS INDUSTRIA E COMERCIO SA<br>     <b>CNPJ:</b> 05.083.795/0001-62<br>     <b>Situação:</b> ATIVA desde 03/11/2005<br>     <b>Endereço:</b> Avenida Governador Jose Malcher, 2377<br>     <b>Bairro:</b> Nazare<br>     </div>`)[0];
+                popup_41295509b5093c10a153058592676bd9.setContent(html_ba4c936601637641f0cef912043c37cd);
+            
+        
+
+        marker_f0fea57d1fadf299f0fd0d14b060eb1d.bindPopup(popup_41295509b5093c10a153058592676bd9)
+        ;
+
+        
+    
+    
+            marker_f0fea57d1fadf299f0fd0d14b060eb1d.bindTooltip(
+                `<div>
+                     BOS S
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0d1c5316ef6b18871a37878943c4c0f6 = L.marker(
+                [-1.4489001248157, -48.49977161233916],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_64aab32244d4f7b020977f94383c6c4b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_238c45945e3541c26c4cbcb6b58cccbd = $(`<div id="html_238c45945e3541c26c4cbcb6b58cccbd" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> ZIO CUCINA<br>     <b>Razão Social:</b> TORTORETO RESTAURANTE LTDA<br>     <b>CNPJ:</b> 44.122.709/0001-35<br>     <b>Situação:</b> ATIVA desde 04/11/2021<br>     <b>Endereço:</b> Boulevard Castilhos Franca<br>     <b>Bairro:</b> Campina<br>     </div>`)[0];
+                popup_64aab32244d4f7b020977f94383c6c4b.setContent(html_238c45945e3541c26c4cbcb6b58cccbd);
+            
+        
+
+        marker_0d1c5316ef6b18871a37878943c4c0f6.bindPopup(popup_64aab32244d4f7b020977f94383c6c4b)
+        ;
+
+        
+    
+    
+            marker_0d1c5316ef6b18871a37878943c4c0f6.bindTooltip(
+                `<div>
+                     ZIO CUCINA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8d7c3c5db730e91f6dbc131786a1e2bf = L.marker(
+                [-1.4618891554347826, -48.50525017608696],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_604a5a5c8e9e60f29069ca5fdc0ec2b4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7af8eae17a57bd8ea692a0f959f500d5 = $(`<div id="html_7af8eae17a57bd8ea692a0f959f500d5" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> INSANO<br>     <b>Razão Social:</b> RUPF  VITAL PRODUCOES LTDA<br>     <b>CNPJ:</b> 05.135.562/0001-66<br>     <b>Situação:</b> ATIVA desde 03/08/2022<br>     <b>Endereço:</b> Rua Sao Boaventura, 268<br>     <b>Bairro:</b> Cidade Velha<br>     </div>`)[0];
+                popup_604a5a5c8e9e60f29069ca5fdc0ec2b4.setContent(html_7af8eae17a57bd8ea692a0f959f500d5);
+            
+        
+
+        marker_8d7c3c5db730e91f6dbc131786a1e2bf.bindPopup(popup_604a5a5c8e9e60f29069ca5fdc0ec2b4)
+        ;
+
+        
+    
+    
+            marker_8d7c3c5db730e91f6dbc131786a1e2bf.bindTooltip(
+                `<div>
+                     INSANO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ae5845c8d2524631f163c2b97236c58 = L.marker(
+                [-1.3905464158067857, -48.47294572197383],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_7f071c9b50a649bf8e545a779cf2d5f3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9cf74846d2ccb3bb978cb3a71b28346c = $(`<div id="html_9cf74846d2ccb3bb978cb3a71b28346c" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> ZIO CUCINA<br>     <b>Razão Social:</b> CAPRI RESTAURANTE E ALIMENTOS LTDA<br>     <b>CNPJ:</b> 35.486.391/0001-80<br>     <b>Situação:</b> ATIVA desde 12/11/2019<br>     <b>Endereço:</b> Rodovia dos Trabalhadores<br>     <b>Bairro:</b> Parque Verde<br>     </div>`)[0];
+                popup_7f071c9b50a649bf8e545a779cf2d5f3.setContent(html_9cf74846d2ccb3bb978cb3a71b28346c);
+            
+        
+
+        marker_5ae5845c8d2524631f163c2b97236c58.bindPopup(popup_7f071c9b50a649bf8e545a779cf2d5f3)
+        ;
+
+        
+    
+    
+            marker_5ae5845c8d2524631f163c2b97236c58.bindTooltip(
+                `<div>
+                     ZIO CUCINA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d2171269a428dadcf144e2d4ca31dbd7 = L.marker(
+                [-1.3656050914186721, -48.44820701506224],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_ee0d89bf5d23c020d7ae9a06440b6894 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1d1dcdb1171c8bfd76d8bb18be9be7a3 = $(`<div id="html_1d1dcdb1171c8bfd76d8bb18be9be7a3" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> SAL E BRASA GRILL EXPRESS<br>     <b>Razão Social:</b> VASCONCELOS E SILVA COMERCIO DE ALIMENTOS E BEBIDAS LTDA<br>     <b>CNPJ:</b> 36.237.312/0001-60<br>     <b>Situação:</b> ATIVA desde 04/02/2020<br>     <b>Endereço:</b> Rodovia Augusto Montenegro, 4300, Loja 2006<br>     <b>Bairro:</b> Parque Verde<br>     </div>`)[0];
+                popup_ee0d89bf5d23c020d7ae9a06440b6894.setContent(html_1d1dcdb1171c8bfd76d8bb18be9be7a3);
+            
+        
+
+        marker_d2171269a428dadcf144e2d4ca31dbd7.bindPopup(popup_ee0d89bf5d23c020d7ae9a06440b6894)
+        ;
+
+        
+    
+    
+            marker_d2171269a428dadcf144e2d4ca31dbd7.bindTooltip(
+                `<div>
+                     SAL E BRASA GRILL EXPRESS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3793c596bd7a7b0e2e1129bff727acfc = L.marker(
+                [-1.4518648432316743, -48.47359077996469],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_231a94b84266a779a73893b3fc32fee4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d413b5edd649bbbd17ec3499a36489af = $(`<div id="html_d413b5edd649bbbd17ec3499a36489af" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> BOI NOVO CHURASCARIA<br>     <b>Razão Social:</b> C DILAN ALENCAR DA SILVA LTDA<br>     <b>CNPJ:</b> 21.371.565/0001-55<br>     <b>Situação:</b> ATIVA desde 07/11/2014<br>     <b>Endereço:</b> Avenida Governador Magalhaes Barata, 774<br>     <b>Bairro:</b> Sao Bras<br>     </div>`)[0];
+                popup_231a94b84266a779a73893b3fc32fee4.setContent(html_d413b5edd649bbbd17ec3499a36489af);
+            
+        
+
+        marker_3793c596bd7a7b0e2e1129bff727acfc.bindPopup(popup_231a94b84266a779a73893b3fc32fee4)
+        ;
+
+        
+    
+    
+            marker_3793c596bd7a7b0e2e1129bff727acfc.bindTooltip(
+                `<div>
+                     BOI NOVO CHURASCARIA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_479a7293c3cd65ce699f87c4826d8b0b = L.marker(
+                [-1.4328537434247124, -48.46503429169043],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_909717da00ba0c0d2bbabb7725971753 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_574e668d018fedf3f1ebfee53a932541 = $(`<div id="html_574e668d018fedf3f1ebfee53a932541" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> RESTAURANTE CARNE DE SOL PICUI<br>     <b>Razão Social:</b> FABRIZIO M SANTOS LTDA<br>     <b>CNPJ:</b> 00.559.243/0001-64<br>     <b>Situação:</b> ATIVA desde 03/11/2005<br>     <b>Endereço:</b> Travessa Mauriti, 2170<br>     <b>Bairro:</b> Pedreira<br>     </div>`)[0];
+                popup_909717da00ba0c0d2bbabb7725971753.setContent(html_574e668d018fedf3f1ebfee53a932541);
+            
+        
+
+        marker_479a7293c3cd65ce699f87c4826d8b0b.bindPopup(popup_909717da00ba0c0d2bbabb7725971753)
+        ;
+
+        
+    
+    
+            marker_479a7293c3cd65ce699f87c4826d8b0b.bindTooltip(
+                `<div>
+                     RESTAURANTE CARNE DE SOL PICUI
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6f08586fed6a3af3c50017d631540820 = L.marker(
+                [-1.4740591850662044, -48.48830586062587],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_f5e65eac3df397b00c5c761278bc15de = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_64157f9dfd728b8706a5caaa8f71c7cc = $(`<div id="html_64157f9dfd728b8706a5caaa8f71c7cc" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> Não Disponível<br>     <b>Razão Social:</b> J P C DOS S COMERCIO E SERVICOS LTDA<br>     <b>CNPJ:</b> 41.326.700/0001-58<br>     <b>Situação:</b> ATIVA desde 23/06/2024<br>     <b>Endereço:</b> Travessa Bom Jardim, 2124<br>     <b>Bairro:</b> Jurunas<br>     </div>`)[0];
+                popup_f5e65eac3df397b00c5c761278bc15de.setContent(html_64157f9dfd728b8706a5caaa8f71c7cc);
+            
+        
+
+        marker_6f08586fed6a3af3c50017d631540820.bindPopup(popup_f5e65eac3df397b00c5c761278bc15de)
+        ;
+
+        
+    
+    
+            marker_6f08586fed6a3af3c50017d631540820.bindTooltip(
+                `<div>
+                     Não Disponível
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb6b21802f4f5d19d73ac6b02f692b64 = L.marker(
+                [-1.4427185786847463, -48.48815072555877],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_7e1fb70b674efc1e607b3fc62f295482 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a60723b3b1bf2753f34a0025e92c6c93 = $(`<div id="html_a60723b3b1bf2753f34a0025e92c6c93" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> PORPINO WANDENKOLK<br>     <b>Razão Social:</b> PORPINO ALIMENTACAO LTDA<br>     <b>CNPJ:</b> 22.365.768/0001-00<br>     <b>Situação:</b> ATIVA desde 30/04/2015<br>     <b>Endereço:</b> Rua Conego Jeronimo Pimentel, 242<br>     <b>Bairro:</b> Umarizal<br>     </div>`)[0];
+                popup_7e1fb70b674efc1e607b3fc62f295482.setContent(html_a60723b3b1bf2753f34a0025e92c6c93);
+            
+        
+
+        marker_cb6b21802f4f5d19d73ac6b02f692b64.bindPopup(popup_7e1fb70b674efc1e607b3fc62f295482)
+        ;
+
+        
+    
+    
+            marker_cb6b21802f4f5d19d73ac6b02f692b64.bindTooltip(
+                `<div>
+                     PORPINO WANDENKOLK
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_57bf51b02c8eef2314f1e93af3e7dc06 = L.marker(
+                [-1.4351138140545932, -48.46124902894093],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_5be0f39703be00827fb35b29e64cb276 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_680418f8c0f18750fa1f395d85458579 = $(`<div id="html_680418f8c0f18750fa1f395d85458579" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> SUSHI CONVENIENCIA RM<br>     <b>Razão Social:</b> SUSHI CONVENIENCIA RM LTDA<br>     <b>CNPJ:</b> 48.010.551/0001-62<br>     <b>Situação:</b> ATIVA desde 20/09/2022<br>     <b>Endereço:</b> Avenida Romulo Maiorana, 1444<br>     <b>Bairro:</b> Marco<br>     </div>`)[0];
+                popup_5be0f39703be00827fb35b29e64cb276.setContent(html_680418f8c0f18750fa1f395d85458579);
+            
+        
+
+        marker_57bf51b02c8eef2314f1e93af3e7dc06.bindPopup(popup_5be0f39703be00827fb35b29e64cb276)
+        ;
+
+        
+    
+    
+            marker_57bf51b02c8eef2314f1e93af3e7dc06.bindTooltip(
+                `<div>
+                     SUSHI CONVENIENCIA RM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_40697d5bb57f0f1a949983175730b48b = L.marker(
+                [-1.4423534965577038, -48.4911274177954],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_d16685f6c42814efb2d411870a5d49e4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cc38e12a099aa0916b431b2ae35e7623 = $(`<div id="html_cc38e12a099aa0916b431b2ae35e7623" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> DIAMOND LOUNGE BAR<br>     <b>Razão Social:</b> DIAMOND LOUNGE BAR LTDA<br>     <b>CNPJ:</b> 48.625.596/0001-41<br>     <b>Situação:</b> ATIVA desde 16/11/2022<br>     <b>Endereço:</b> Avenida Visconde de Souza Franco, 415<br>     <b>Bairro:</b> Umarizal<br>     </div>`)[0];
+                popup_d16685f6c42814efb2d411870a5d49e4.setContent(html_cc38e12a099aa0916b431b2ae35e7623);
+            
+        
+
+        marker_40697d5bb57f0f1a949983175730b48b.bindPopup(popup_d16685f6c42814efb2d411870a5d49e4)
+        ;
+
+        
+    
+    
+            marker_40697d5bb57f0f1a949983175730b48b.bindTooltip(
+                `<div>
+                     DIAMOND LOUNGE BAR
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2530af9847b93c3c938761baad0e0c46 = L.marker(
+                [-1.3656050914186721, -48.44820701506224],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_c6a306078f975b64058a31bddcfad71b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_adaf18bd7e6fb3df8a63f60381be194a = $(`<div id="html_adaf18bd7e6fb3df8a63f60381be194a" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> CASA BAUDUCCO  PARQUE SHOPPING BELEM<br>     <b>Razão Social:</b> NESBELLO COMERCIO DE ALIMENTOS LTDA<br>     <b>CNPJ:</b> 56.423.032/0001-54<br>     <b>Situação:</b> ATIVA desde 09/08/2024<br>     <b>Endereço:</b> Rodovia Augusto Montenegro, 4300, Andar Terreo Loja 1084<br>     <b>Bairro:</b> Parque Verde<br>     </div>`)[0];
+                popup_c6a306078f975b64058a31bddcfad71b.setContent(html_adaf18bd7e6fb3df8a63f60381be194a);
+            
+        
+
+        marker_2530af9847b93c3c938761baad0e0c46.bindPopup(popup_c6a306078f975b64058a31bddcfad71b)
+        ;
+
+        
+    
+    
+            marker_2530af9847b93c3c938761baad0e0c46.bindTooltip(
+                `<div>
+                     CASA BAUDUCCO  PARQUE SHOPPING BELEM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f9232887374e78407c5a49c6811e10fe = L.marker(
+                [-1.3656050914186721, -48.44820701506224],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_be3321583b563312afd31d5e8cf1834f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cda32d414c0261f70bc3c663a93319ae = $(`<div id="html_cda32d414c0261f70bc3c663a93319ae" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> RESTO MONTENEGRO<br>     <b>Razão Social:</b> MONTENEGRO ALIMENTOS LTDA<br>     <b>CNPJ:</b> 47.480.052/0001-76<br>     <b>Situação:</b> ATIVA desde 09/08/2022<br>     <b>Endereço:</b> Rodovia Augusto Montenegro, 981, Km 07<br>     <b>Bairro:</b> Parque Verde<br>     </div>`)[0];
+                popup_be3321583b563312afd31d5e8cf1834f.setContent(html_cda32d414c0261f70bc3c663a93319ae);
+            
+        
+
+        marker_f9232887374e78407c5a49c6811e10fe.bindPopup(popup_be3321583b563312afd31d5e8cf1834f)
+        ;
+
+        
+    
+    
+            marker_f9232887374e78407c5a49c6811e10fe.bindTooltip(
+                `<div>
+                     RESTO MONTENEGRO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_37ba965dbbdb0420790f732153fd74c3 = L.marker(
+                [-1.4405297, -48.4692228],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_5b15c973a1f25beb926aa863fbfd87df = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_932844a6d1a7efa4eb152e9acc20ef5f = $(`<div id="html_932844a6d1a7efa4eb152e9acc20ef5f" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> CHURRASCARIA E PIZZARIA BOI D'OURO<br>     <b>Razão Social:</b> SILVA  GUGEL LTDA<br>     <b>CNPJ:</b> 15.393.207/0001-40<br>     <b>Situação:</b> ATIVA desde 27/10/2011<br>     <b>Endereço:</b> Avenida Duque de Caxias, 427, Esq. Travessa Curuzu<br>     <b>Bairro:</b> Marco<br>     </div>`)[0];
+                popup_5b15c973a1f25beb926aa863fbfd87df.setContent(html_932844a6d1a7efa4eb152e9acc20ef5f);
+            
+        
+
+        marker_37ba965dbbdb0420790f732153fd74c3.bindPopup(popup_5b15c973a1f25beb926aa863fbfd87df)
+        ;
+
+        
+    
+    
+            marker_37ba965dbbdb0420790f732153fd74c3.bindTooltip(
+                `<div>
+                     CHURRASCARIA E PIZZARIA BOI D'OURO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dc1516df98b72b1ca4dc99b5004f2d7d = L.marker(
+                [-1.3918980614816898, -48.417318168034654],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_b1591621d421e43919d0382d251daf1e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_be5752d5552f773520278622bf0c7b9b = $(`<div id="html_be5752d5552f773520278622bf0c7b9b" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> Não Disponível<br>     <b>Razão Social:</b> S  L RESTAURANTES LTDA<br>     <b>CNPJ:</b> 04.932.361/0001-27<br>     <b>Situação:</b> ATIVA desde 13/09/2022<br>     <b>Endereço:</b> Rodovia Br-316<br>     <b>Bairro:</b> Castanheira<br>     </div>`)[0];
+                popup_b1591621d421e43919d0382d251daf1e.setContent(html_be5752d5552f773520278622bf0c7b9b);
+            
+        
+
+        marker_dc1516df98b72b1ca4dc99b5004f2d7d.bindPopup(popup_b1591621d421e43919d0382d251daf1e)
+        ;
+
+        
+    
+    
+            marker_dc1516df98b72b1ca4dc99b5004f2d7d.bindTooltip(
+                `<div>
+                     Não Disponível
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_59e0a8106eb71b4c168cfc89baa99ddb = L.marker(
+                [-1.44632925, -48.489719744011424],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_d4b46f1139aaf7918b4df34b73582720 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_099d03ffa054b47ac7d349da0ebe4ef0 = $(`<div id="html_099d03ffa054b47ac7d349da0ebe4ef0" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> BLEM PADARIA PORTUGUESA  BELEM<br>     <b>Razão Social:</b> MP BLEM LTDA<br>     <b>CNPJ:</b> 49.930.853/0001-11<br>     <b>Situação:</b> ATIVA desde 14/03/2023<br>     <b>Endereço:</b> Avenida Visconde de Souza Franco, 776, Loja 214<br>     <b>Bairro:</b> Reduto<br>     </div>`)[0];
+                popup_d4b46f1139aaf7918b4df34b73582720.setContent(html_099d03ffa054b47ac7d349da0ebe4ef0);
+            
+        
+
+        marker_59e0a8106eb71b4c168cfc89baa99ddb.bindPopup(popup_d4b46f1139aaf7918b4df34b73582720)
+        ;
+
+        
+    
+    
+            marker_59e0a8106eb71b4c168cfc89baa99ddb.bindTooltip(
+                `<div>
+                     BLEM PADARIA PORTUGUESA  BELEM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d1d5d4b704828ac6f90e03c229e5ebbb = L.marker(
+                [-1.4371763, -48.488230187368416],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_8ae1ec92282e843a01b43c89729e319c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_51e9acfb391f85c783e80ed85efbf86e = $(`<div id="html_51e9acfb391f85c783e80ed85efbf86e" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> RESTAURANTE VER O ACAI<br>     <b>Razão Social:</b> ANDRADE FACANHA COMERCIO DE ALIMENTOS LTDA<br>     <b>CNPJ:</b> 02.515.642/0001-59<br>     <b>Situação:</b> ATIVA desde 03/11/2005<br>     <b>Endereço:</b> Travessa Dom Pedro I, 599<br>     <b>Bairro:</b> Umarizal<br>     </div>`)[0];
+                popup_8ae1ec92282e843a01b43c89729e319c.setContent(html_51e9acfb391f85c783e80ed85efbf86e);
+            
+        
+
+        marker_d1d5d4b704828ac6f90e03c229e5ebbb.bindPopup(popup_8ae1ec92282e843a01b43c89729e319c)
+        ;
+
+        
+    
+    
+            marker_d1d5d4b704828ac6f90e03c229e5ebbb.bindTooltip(
+                `<div>
+                     RESTAURANTE VER O ACAI
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_12bfe34853839e37aad2d4ba258ee791 = L.marker(
+                [-1.4345321827383122, -48.491299556970816],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_a6a905c80bf1b7391a140c0767d20626 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6f5644c54241229c189f5fb17db94738 = $(`<div id="html_6f5644c54241229c189f5fb17db94738" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> PORTO VER O RIO<br>     <b>Razão Social:</b> NORTE FOOD COMERCIO DE ALIMENTOS LTDA<br>     <b>CNPJ:</b> 05.476.623/0001-59<br>     <b>Situação:</b> ATIVA desde 03/11/2005<br>     <b>Endereço:</b> Avenida Pedro Alvares Cabral, 1101, Setor a<br>     <b>Bairro:</b> Umarizal<br>     </div>`)[0];
+                popup_a6a905c80bf1b7391a140c0767d20626.setContent(html_6f5644c54241229c189f5fb17db94738);
+            
+        
+
+        marker_12bfe34853839e37aad2d4ba258ee791.bindPopup(popup_a6a905c80bf1b7391a140c0767d20626)
+        ;
+
+        
+    
+    
+            marker_12bfe34853839e37aad2d4ba258ee791.bindTooltip(
+                `<div>
+                     PORTO VER O RIO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_813de593004710bc7c0969291b1d2e17 = L.marker(
+                [-1.45290675, -48.48096515],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_dee40ae57c2941af7fdd6e1fe922c158 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4dc44f3595f6d0f573c0e445181b21b0 = $(`<div id="html_4dc44f3595f6d0f573c0e445181b21b0" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> BOTECO SANTA MATTA<br>     <b>Razão Social:</b> A V RODRIGUES LTDA<br>     <b>CNPJ:</b> 50.274.408/0001-20<br>     <b>Situação:</b> ATIVA desde 11/04/2023<br>     <b>Endereço:</b> Rua Rodolfo Chermont, 1607<br>     <b>Bairro:</b> Marambaia<br>     </div>`)[0];
+                popup_dee40ae57c2941af7fdd6e1fe922c158.setContent(html_4dc44f3595f6d0f573c0e445181b21b0);
+            
+        
+
+        marker_813de593004710bc7c0969291b1d2e17.bindPopup(popup_dee40ae57c2941af7fdd6e1fe922c158)
+        ;
+
+        
+    
+    
+            marker_813de593004710bc7c0969291b1d2e17.bindTooltip(
+                `<div>
+                     BOTECO SANTA MATTA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b191f4acdf4f7b160b1364c71f3a717 = L.marker(
+                [-1.4498903, -48.5004611],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_7cc6aec079ff56baf81852a5d7814640 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_03491a23fd4c1a61fa408930ced7fc74 = $(`<div id="html_03491a23fd4c1a61fa408930ced7fc74" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> CAFE SANTO  MARUJOS<br>     <b>Razão Social:</b> G R CASTRO ALVES<br>     <b>CNPJ:</b> 01.910.679/0001-19<br>     <b>Situação:</b> ATIVA desde 03/11/2005<br>     <b>Endereço:</b> Boulevard Castilhos Franca, 504<br>     <b>Bairro:</b> Campina<br>     </div>`)[0];
+                popup_7cc6aec079ff56baf81852a5d7814640.setContent(html_03491a23fd4c1a61fa408930ced7fc74);
+            
+        
+
+        marker_7b191f4acdf4f7b160b1364c71f3a717.bindPopup(popup_7cc6aec079ff56baf81852a5d7814640)
+        ;
+
+        
+    
+    
+            marker_7b191f4acdf4f7b160b1364c71f3a717.bindTooltip(
+                `<div>
+                     CAFE SANTO  MARUJOS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6ff047a29a07a435b14d9bcaaee7a063 = L.marker(
+                [-1.441312, -48.4900629],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_f351e17f5f53e98bbd87c1b1fde0725d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c3a0e7a54516570539cd7017b932aa72 = $(`<div id="html_c3a0e7a54516570539cd7017b932aa72" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> GRUPO R S LYNO HOLDING<br>     <b>Razão Social:</b> SILVA E SOLYNO LTDA<br>     <b>CNPJ:</b> 28.056.249/0001-38<br>     <b>Situação:</b> ATIVA desde 17/06/2022<br>     <b>Endereço:</b> Travessa Almirante Wandenkolk, 362<br>     <b>Bairro:</b> Umarizal<br>     </div>`)[0];
+                popup_f351e17f5f53e98bbd87c1b1fde0725d.setContent(html_c3a0e7a54516570539cd7017b932aa72);
+            
+        
+
+        marker_6ff047a29a07a435b14d9bcaaee7a063.bindPopup(popup_f351e17f5f53e98bbd87c1b1fde0725d)
+        ;
+
+        
+    
+    
+            marker_6ff047a29a07a435b14d9bcaaee7a063.bindTooltip(
+                `<div>
+                     GRUPO R S LYNO HOLDING
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4d89c6cca9f9e1ca957bac8efedc72f3 = L.marker(
+                [-1.4557447844158407, -48.462525311088704],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_9777280af68aff9e9f83b237b5b38b07 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ee5fb6064c98f8ac9e1e82f31b1c284a = $(`<div id="html_ee5fb6064c98f8ac9e1e82f31b1c284a" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> PROSPERA SERVICE<br>     <b>Razão Social:</b> PROSPERA SERVICE LTDA<br>     <b>CNPJ:</b> 15.011.217/0001-74<br>     <b>Situação:</b> ATIVA desde 07/02/2012<br>     <b>Endereço:</b> Avenida Conselheiro Furtado, 3926<br>     <b>Bairro:</b> Guama<br>     </div>`)[0];
+                popup_9777280af68aff9e9f83b237b5b38b07.setContent(html_ee5fb6064c98f8ac9e1e82f31b1c284a);
+            
+        
+
+        marker_4d89c6cca9f9e1ca957bac8efedc72f3.bindPopup(popup_9777280af68aff9e9f83b237b5b38b07)
+        ;
+
+        
+    
+    
+            marker_4d89c6cca9f9e1ca957bac8efedc72f3.bindTooltip(
+                `<div>
+                     PROSPERA SERVICE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5620fc49c8d654e71a922b035510356c = L.marker(
+                [-1.4392242456177626, -48.463195513297606],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_6672b57b0db6309e2b43ee4bc3f6c6c6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d806cc52da4e83b46e0f9dd32b088e2a = $(`<div id="html_d806cc52da4e83b46e0f9dd32b088e2a" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> RUSTY PUB<br>     <b>Razão Social:</b> PAGNO  CIA LTDA<br>     <b>CNPJ:</b> 22.357.869/0001-20<br>     <b>Situação:</b> ATIVA desde 30/04/2015<br>     <b>Endereço:</b> Travessa Vileta, 2509, Andar: Terreo;<br>     <b>Bairro:</b> Marco<br>     </div>`)[0];
+                popup_6672b57b0db6309e2b43ee4bc3f6c6c6.setContent(html_d806cc52da4e83b46e0f9dd32b088e2a);
+            
+        
+
+        marker_5620fc49c8d654e71a922b035510356c.bindPopup(popup_6672b57b0db6309e2b43ee4bc3f6c6c6)
+        ;
+
+        
+    
+    
+            marker_5620fc49c8d654e71a922b035510356c.bindTooltip(
+                `<div>
+                     RUSTY PUB
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0563c7b5a278253a3f31a97e27416fa4 = L.marker(
+                [-1.3905464158067857, -48.47294572197383],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_8bbf0843a19fd35e7ddddaaec002f90c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_657b2495b5b1d9eea79c43ce2bbc7fc8 = $(`<div id="html_657b2495b5b1d9eea79c43ce2bbc7fc8" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> BALL DIVERSOES<br>     <b>Razão Social:</b> BALL DIVERSOES  ENTRETENIMENTOS LTDA<br>     <b>CNPJ:</b> 26.625.531/0001-63<br>     <b>Situação:</b> ATIVA desde 29/11/2016<br>     <b>Endereço:</b> Rodovia dos Trabalhadores<br>     <b>Bairro:</b> Parque Verde<br>     </div>`)[0];
+                popup_8bbf0843a19fd35e7ddddaaec002f90c.setContent(html_657b2495b5b1d9eea79c43ce2bbc7fc8);
+            
+        
+
+        marker_0563c7b5a278253a3f31a97e27416fa4.bindPopup(popup_8bbf0843a19fd35e7ddddaaec002f90c)
+        ;
+
+        
+    
+    
+            marker_0563c7b5a278253a3f31a97e27416fa4.bindTooltip(
+                `<div>
+                     BALL DIVERSOES
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e6f9647a6a60d8d097485f693074332 = L.marker(
+                [-1.3847718192585718, -48.437194326701736],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_b417cfd3ab4c3196a7fdb7e801a176ae = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0ad9b918047422c3ecc3e0a061a4f2e4 = $(`<div id="html_0ad9b918047422c3ecc3e0a061a4f2e4" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> CHURRASCARIA BOI D'OURO<br>     <b>Razão Social:</b> VACARIN  GUGEL LTDA<br>     <b>CNPJ:</b> 16.685.636/0001-54<br>     <b>Situação:</b> ATIVA desde 03/03/2022<br>     <b>Endereço:</b> Rodovia Augusto Montenegro, 1802<br>     <b>Bairro:</b> Mangueirao<br>     </div>`)[0];
+                popup_b417cfd3ab4c3196a7fdb7e801a176ae.setContent(html_0ad9b918047422c3ecc3e0a061a4f2e4);
+            
+        
+
+        marker_4e6f9647a6a60d8d097485f693074332.bindPopup(popup_b417cfd3ab4c3196a7fdb7e801a176ae)
+        ;
+
+        
+    
+    
+            marker_4e6f9647a6a60d8d097485f693074332.bindTooltip(
+                `<div>
+                     CHURRASCARIA BOI D'OURO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_159cd3f47408e190025fba95f935617a = L.marker(
+                [-1.4413315, -48.4653389],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_6d15f393b896461dcd241566d33da269 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_37d7962daa351d5166c7dc06ee4ac8a9 = $(`<div id="html_37d7962daa351d5166c7dc06ee4ac8a9" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> BBQ PREMIUM<br>     <b>Razão Social:</b> MUIRAQUITA BUSINESS LTDA<br>     <b>CNPJ:</b> 37.843.427/0001-61<br>     <b>Situação:</b> ATIVA desde 24/07/2020<br>     <b>Endereço:</b> Avenida Romulo Maiorana, 700, Sala 01<br>     <b>Bairro:</b> Marco<br>     </div>`)[0];
+                popup_6d15f393b896461dcd241566d33da269.setContent(html_37d7962daa351d5166c7dc06ee4ac8a9);
+            
+        
+
+        marker_159cd3f47408e190025fba95f935617a.bindPopup(popup_6d15f393b896461dcd241566d33da269)
+        ;
+
+        
+    
+    
+            marker_159cd3f47408e190025fba95f935617a.bindTooltip(
+                `<div>
+                     BBQ PREMIUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_56d58147e1f531ad81377629f82cb10d = L.marker(
+                [-1.44632925, -48.489719744011424],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_524070a073cd357194ff461aff5c7dff = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1a358ec2dfb76801ad5d18d2530c0efa = $(`<div id="html_1a358ec2dfb76801ad5d18d2530c0efa" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> Não Disponível<br>     <b>Razão Social:</b> SANTUNES COMERCIO DE ALIMENTOS LTDA<br>     <b>CNPJ:</b> 51.668.229/0001-30<br>     <b>Situação:</b> ATIVA desde 03/08/2023<br>     <b>Endereço:</b> Avenida Visconde de Souza Franco, 776, Shopping Boulevard Loja 128<br>     <b>Bairro:</b> Reduto<br>     </div>`)[0];
+                popup_524070a073cd357194ff461aff5c7dff.setContent(html_1a358ec2dfb76801ad5d18d2530c0efa);
+            
+        
+
+        marker_56d58147e1f531ad81377629f82cb10d.bindPopup(popup_524070a073cd357194ff461aff5c7dff)
+        ;
+
+        
+    
+    
+            marker_56d58147e1f531ad81377629f82cb10d.bindTooltip(
+                `<div>
+                     Não Disponível
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a15df38ecd70653524106978ca7cb57 = L.marker(
+                [-1.3019052536, -48.477318683200004],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_c85c9194fbe2b18aada664648cf60b79 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4b8a7317627d267299f74d39f4251af3 = $(`<div id="html_4b8a7317627d267299f74d39f4251af3" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> PONTAL DAS ILHAS<br>     <b>Razão Social:</b> PONTAL DA ILHA LTDA<br>     <b>CNPJ:</b> 53.209.819/0001-20<br>     <b>Situação:</b> ATIVA desde 15/12/2023<br>     <b>Endereço:</b> Rodovia Augusto Montenegro, 28<br>     <b>Bairro:</b> Tenone<br>     </div>`)[0];
+                popup_c85c9194fbe2b18aada664648cf60b79.setContent(html_4b8a7317627d267299f74d39f4251af3);
+            
+        
+
+        marker_4a15df38ecd70653524106978ca7cb57.bindPopup(popup_c85c9194fbe2b18aada664648cf60b79)
+        ;
+
+        
+    
+    
+            marker_4a15df38ecd70653524106978ca7cb57.bindTooltip(
+                `<div>
+                     PONTAL DAS ILHAS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2c9e57291e0aef1b93773ae188ab5389 = L.marker(
+                [-1.4472465, -48.4855494],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_ae91b01ecfaa6e34f2e048e38341e1bb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a1ac3cf09966938560d398ea8406b9db = $(`<div id="html_a1ac3cf09966938560d398ea8406b9db" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> AMAR BELEM<br>     <b>Razão Social:</b> HRB DE ARAUJO LTDA<br>     <b>CNPJ:</b> 55.802.402/0001-00<br>     <b>Situação:</b> ATIVA desde 04/07/2024<br>     <b>Endereço:</b> Travessa Almirante Wandenkolk, 1225<br>     <b>Bairro:</b> Umarizal<br>     </div>`)[0];
+                popup_ae91b01ecfaa6e34f2e048e38341e1bb.setContent(html_a1ac3cf09966938560d398ea8406b9db);
+            
+        
+
+        marker_2c9e57291e0aef1b93773ae188ab5389.bindPopup(popup_ae91b01ecfaa6e34f2e048e38341e1bb)
+        ;
+
+        
+    
+    
+            marker_2c9e57291e0aef1b93773ae188ab5389.bindTooltip(
+                `<div>
+                     AMAR BELEM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_38701d8991998953609c6f02b000a3c0 = L.marker(
+                [-1.4540109639367262, -48.48613148281963],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_01be9f26a38e24f7099b8678d6947baf = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3b10dc99874a0a0ca9af3fc7e516e650 = $(`<div id="html_3b10dc99874a0a0ca9af3fc7e516e650" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> CASAMIA EVENTOS<br>     <b>Razão Social:</b> CASAMIA EVENTOS LTDA<br>     <b>CNPJ:</b> 48.708.807/0001-00<br>     <b>Situação:</b> ATIVA desde 23/11/2022<br>     <b>Endereço:</b> Travessa Quintino Bocaiuva, 1678, Altos<br>     <b>Bairro:</b> Nazare<br>     </div>`)[0];
+                popup_01be9f26a38e24f7099b8678d6947baf.setContent(html_3b10dc99874a0a0ca9af3fc7e516e650);
+            
+        
+
+        marker_38701d8991998953609c6f02b000a3c0.bindPopup(popup_01be9f26a38e24f7099b8678d6947baf)
+        ;
+
+        
+    
+    
+            marker_38701d8991998953609c6f02b000a3c0.bindTooltip(
+                `<div>
+                     CASAMIA EVENTOS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c7094b68ca372dccb3dd53868f25e471 = L.marker(
+                [-1.4446394259257618, -48.46045400546621],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_fa400961b0afbe2c38ec504b8f7d4078 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_10e9fabb8effd81bc137fb6062bbcf78 = $(`<div id="html_10e9fabb8effd81bc137fb6062bbcf78" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> CHURRASCARIA BOI D'OURO PRIME<br>     <b>Razão Social:</b> CHURRASCARIA BOI D'OURO PRIME LTDA<br>     <b>CNPJ:</b> 12.010.851/0001-02<br>     <b>Situação:</b> ATIVA desde 28/05/2010<br>     <b>Endereço:</b> Avenida Joao Paulo Ii, 395<br>     <b>Bairro:</b> Marco<br>     </div>`)[0];
+                popup_fa400961b0afbe2c38ec504b8f7d4078.setContent(html_10e9fabb8effd81bc137fb6062bbcf78);
+            
+        
+
+        marker_c7094b68ca372dccb3dd53868f25e471.bindPopup(popup_fa400961b0afbe2c38ec504b8f7d4078)
+        ;
+
+        
+    
+    
+            marker_c7094b68ca372dccb3dd53868f25e471.bindTooltip(
+                `<div>
+                     CHURRASCARIA BOI D'OURO PRIME
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6ba3ccb59b3c005161ff451b0ff2bad6 = L.marker(
+                [-1.4639197, -48.4864819],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_1d6a57a9c2a40ba1584156a0fea66173 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_93bd4929a10e994eb6a7a0eb6ab8a216 = $(`<div id="html_93bd4929a10e994eb6a7a0eb6ab8a216" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> PALICONE BELEM<br>     <b>Razão Social:</b> PALICONE BELEM LTDA<br>     <b>CNPJ:</b> 48.767.935/0001-24<br>     <b>Situação:</b> ATIVA desde 30/11/2022<br>     <b>Endereço:</b> Travessa Padre Eutiquio, 2188<br>     <b>Bairro:</b> Batista Campos<br>     </div>`)[0];
+                popup_1d6a57a9c2a40ba1584156a0fea66173.setContent(html_93bd4929a10e994eb6a7a0eb6ab8a216);
+            
+        
+
+        marker_6ba3ccb59b3c005161ff451b0ff2bad6.bindPopup(popup_1d6a57a9c2a40ba1584156a0fea66173)
+        ;
+
+        
+    
+    
+            marker_6ba3ccb59b3c005161ff451b0ff2bad6.bindTooltip(
+                `<div>
+                     PALICONE BELEM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5729505d0bffaf960d2d41d9398aa92c = L.marker(
+                [-1.4347498625, -48.4804931625],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_ab667b9d1af9e866e78c193aed97c75b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a85590e8ae1ca3242b57fe5927b048a3 = $(`<div id="html_a85590e8ae1ca3242b57fe5927b048a3" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> LGOM SERVICOS<br>     <b>Razão Social:</b> LGOM SERVICOS LTDA<br>     <b>CNPJ:</b> 33.825.804/0001-89<br>     <b>Situação:</b> ATIVA desde 04/06/2019<br>     <b>Endereço:</b> Travessa Quatorze de Marco, 393, Galpaoprox. Ao Canal<br>     <b>Bairro:</b> Umarizal<br>     </div>`)[0];
+                popup_ab667b9d1af9e866e78c193aed97c75b.setContent(html_a85590e8ae1ca3242b57fe5927b048a3);
+            
+        
+
+        marker_5729505d0bffaf960d2d41d9398aa92c.bindPopup(popup_ab667b9d1af9e866e78c193aed97c75b)
+        ;
+
+        
+    
+    
+            marker_5729505d0bffaf960d2d41d9398aa92c.bindTooltip(
+                `<div>
+                     LGOM SERVICOS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_60a2386eff0a947ec2a0775f6464d660 = L.marker(
+                [-1.4470554999999998, -48.469332725],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_5cefc3aa2713fcc4b277d7d47d72d71b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3455f609d483dd6f804cb45496d9c595 = $(`<div id="html_3455f609d483dd6f804cb45496d9c595" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> PEIXARIA DOM FILHOTE<br>     <b>Razão Social:</b> RESTAURANTE DOM FILHOTE LTDA<br>     <b>CNPJ:</b> 33.597.155/0001-06<br>     <b>Situação:</b> ATIVA desde 13/05/2019<br>     <b>Endereço:</b> Avenida Jose Bonifacio, 48<br>     <b>Bairro:</b> Fatima<br>     </div>`)[0];
+                popup_5cefc3aa2713fcc4b277d7d47d72d71b.setContent(html_3455f609d483dd6f804cb45496d9c595);
+            
+        
+
+        marker_60a2386eff0a947ec2a0775f6464d660.bindPopup(popup_5cefc3aa2713fcc4b277d7d47d72d71b)
+        ;
+
+        
+    
+    
+            marker_60a2386eff0a947ec2a0775f6464d660.bindTooltip(
+                `<div>
+                     PEIXARIA DOM FILHOTE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e59d1ab9f0377b7df4697f7986f096ea = L.marker(
+                [-1.4579824352176463, -48.49742338925528],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_9399fbccb9a84b3ad3a14ff780563538 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_79f3289f5cf0484616f436ddc1005131 = $(`<div id="html_79f3289f5cf0484616f436ddc1005131" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> CHURRASCARIA E PIZZARIA BOI D'OURO<br>     <b>Razão Social:</b> GUGEL  CIA LTDA<br>     <b>CNPJ:</b> 09.320.832/0001-60<br>     <b>Situação:</b> ATIVA desde 04/01/2008<br>     <b>Endereço:</b> Avenida Almirante Tamandare, 912<br>     <b>Bairro:</b> Cidade Velha<br>     </div>`)[0];
+                popup_9399fbccb9a84b3ad3a14ff780563538.setContent(html_79f3289f5cf0484616f436ddc1005131);
+            
+        
+
+        marker_e59d1ab9f0377b7df4697f7986f096ea.bindPopup(popup_9399fbccb9a84b3ad3a14ff780563538)
+        ;
+
+        
+    
+    
+            marker_e59d1ab9f0377b7df4697f7986f096ea.bindTooltip(
+                `<div>
+                     CHURRASCARIA E PIZZARIA BOI D'OURO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_990eebf01a5097937d29895a1a19a049 = L.marker(
+                [-1.44632925, -48.489719744011424],
+                {}
+            ).addTo(marker_cluster_e294f49ca636526ae0578efcccb797ee);
+        
+    
+        var popup_87f1599dcb284842f170dac320f74c67 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ca4f54358e6d0ae2ce8058d52d00771c = $(`<div id="html_ca4f54358e6d0ae2ce8058d52d00771c" style="width: 100.0%; height: 100.0%;">     <b>Nome:</b> GELATO BELEM<br>     <b>Razão Social:</b> U L A COMERCIO DE ALIMENTOS LTDA<br>     <b>CNPJ:</b> 53.929.126/0001-01<br>     <b>Situação:</b> ATIVA desde 15/02/2024<br>     <b>Endereço:</b> Avenida Visconde de Souza Franco, 776, Shopping Boulevard Loja 125/126<br>     <b>Bairro:</b> Reduto<br>     </div>`)[0];
+                popup_87f1599dcb284842f170dac320f74c67.setContent(html_ca4f54358e6d0ae2ce8058d52d00771c);
+            
+        
+
+        marker_990eebf01a5097937d29895a1a19a049.bindPopup(popup_87f1599dcb284842f170dac320f74c67)
+        ;
+
+        
+    
+    
+            marker_990eebf01a5097937d29895a1a19a049.bindTooltip(
+                `<div>
+                     GELATO BELEM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            marker_cluster_e294f49ca636526ae0578efcccb797ee.addTo(map_0897c72edf07655da96cf64587b86cee);
+        
+</script>
+</html>
